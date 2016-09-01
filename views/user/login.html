@@ -1,0 +1,19 @@
+<div class="header-bar"> <div class="container"> <div class="row"> <div class="col-md-3 col-xs-2"></div> <div class="col-md-6 col-xs-8">用户登录</div> <div class="col-md-3 col-xs-2"></div> </div> </div> </div> <div class="body"> <div class="container"> <div class="row"> <!-- <form class="user-login">
+      <div class="form-group">
+        <label for="username">用户名</label>
+        <input type="text" required class="form-control" id="username" placeholder="请输入用户名/手机/邮箱" name="username">
+      </div>
+      <div class="form-group">
+        <label for="password">密码</label>
+        <input type="password" class="form-control" id="password" placeholder="请输入密码" name="password">
+      </div>
+      <p class="center">
+        <button type="button" class="btn btn-primary btn-block" ng-click="login($event)">登录</button>
+      </p>
+      <p class="center big">尚未注册？ 马上 <a class="btn btn-default btn-sm register" ng-click="toRegister()">注册</a></p>
+      <p class="center big">忘记密码？ <a class="btn btn-default btn-sm ok" href="#/user/password/retrieve">找回密码</a></p>
+      <p class="center big">通过下面  第三方登录<br/>
+        <a ng-click="toWeixin()"><i class="fa fa-weixin oauth-register"></i></a>
+      </p>
+
+    </form> --> <h4 class="text-center">请选择您的登录方式</h4> <div class="col-xs-12 text-center oauth"> <a ng-click="toWeixin()" class="btn btn-default"><i class="fa fa-weixin oauth-register"></i></a> </div> </div> </div> </div> <div ng-include src="'views/footer.html'"></div>

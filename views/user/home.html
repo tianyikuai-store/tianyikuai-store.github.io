@@ -1,0 +1,43 @@
+<div class="header-bar"> <div class="container"> <div class="row"> <div class="col-md-3 col-xs-2"></div> <div class="col-md-6 col-xs-8">用户中心</div> <div class="col-md-3 col-xs-2"></div> </div> </div> </div> <div ng-include src="'views/loading.html'" ng-show="!logined"></div> <!-- <div class="body" ng-show="!logined">
+  <div class="jumbotron">
+    <div class="container">
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active"
+             role="progressbar"
+             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+        </div>
+      </div>
+      <div class="alert alert-warning" role="alert">
+        正在加载中心信息...
+      </div>
+    </div>
+  </div>
+</div> --> <div class="body user" ng-show="logined"> <div class="android-row image head profile-logo" ng-click="goProfile()"> <div class="row nomargin"> <div class="col-md-2 left col-xs-3"> <img ng-src="{{user.extra.logo.url || 'images/logo.png'}}" alt="logo"> </div> <div class="mid col-md-8 col-xs-6"> <h3 class="profile-nickname">{{user.extra.nickname}}<span ng-show="!user.extra.nickname">昵称未指定</span></h3> <h4 class="profile-username">{{user.username || ""}}</h4> </div> <div class="col-md-2 col-xs-3 right"> <i class="fa fa-chevron-right profile"></i> </div> </div> </div> <div class="android-row head mid" ng-click="goOrders()"> <div class="row nomargin"> <div class="col-md-2 col-xs-2 left"> <i class="fa fa-file-text user-home-order"></i> </div> <div class="col-md-8 col-xs-7 mid"> <p>报名订单</p> </div> <div class="col-md-2 col-xs-3 right"> <i class="fa fa-chevron-right"></i> </div> </div> </div> <div class="android-row mid" ng-click="goAddresses()"> <div class="row nomargin"> <div class="col-md-2 col-xs-2 left"> <i class="fa fa-building user-home-address"></i> </div> <div class="col-md-8 col-xs-7 mid"> <p>报名人员</p> </div> <div class="col-md-2 col-xs-3 right"> <i class="fa fa-chevron-right"></i> </div> </div> </div> <!--<div class="android-row mid" ng-click="goSubscribed()">
+
+    <div class="row nomargin">
+      <div class="col-md-2 col-xs-2 left">
+        <i class="fa fa-heart user-home-subscribe"></i>
+      </div>
+      <div class="col-md-8 col-xs-7 mid">
+        <p>订阅的商城</p>
+      </div>
+      <div class="col-md-2 col-xs-3 right">
+        <i class="fa fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>--> <div class="android-row" ng-show="false"> <div class="row nomargin"> <div class="col-md-2 col-xs-2 left"> <i class="fa fa-gear user-home-settings"></i> </div> <div class="col-md-8 col-xs-7 mid"> <p>设置</p> </div> <div class="col-md-2 col-xs-3 right"> <i class="fa fa-chevron-right"></i> </div> </div> </div> <div class="android-row head mid" ng-click="goFeedback()"> <div class="row nomargin"> <div class="col-md-2 col-xs-2 left"> <i class="fa fa-envelope user-home-feedback"></i> </div> <div class="col-md-8 col-xs-7 mid"> <p>意见反馈</p> </div> <div class="col-md-2 col-xs-3 right"> <i class="fa fa-chevron-right"></i> </div> </div> </div> <!--
+  <div class="android-row mid">
+
+    <div class="row">
+      <div class="col-md-2 col-xs-2 left">
+        <i class="fa fa-map-marker"></i>
+      </div>
+      <div class="col-md-8 col-xs-7 mid">
+        <p>客服电话</p>
+      </div>
+      <div class="col-md-2 col-xs-3 right">
+        <i class="fa fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+  --> <div class="android-row head" ng-click="goAbout()"> <div class="row nomargin"> <div class="col-md-2 col-xs-2 left"> <i class="fa fa-info-circle user-home-about"></i> </div> <div class="col-md-8 col-xs-7 mid"> <p>关于</p> </div> <div class="col-md-2 col-xs-3 right"> <i class="fa fa-chevron-right"></i> </div> </div> </div> <div class="android-row" ng-click="logout()"> <div class="row nomargin"> <div class="col-md-2 col-xs-2 left"> <i class="fa fa-sign-out"></i> </div> <div class="col-md-8 col-xs-7 mid"> <p>退出</p> </div> <div class="col-md-2 col-xs-3 right"> </div> </div> </div> </div> <div ng-include src="'views/footer.html'"></div>
