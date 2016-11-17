@@ -1,0 +1,25 @@
+{
+  "short_name": "田一块小卖部",
+  "name": "田一块小卖部(v0.1)",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/logo.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "theme_color": "#40cea0",
+  "display": "standalone",
+  "orientation": "portrait"
+
+}
